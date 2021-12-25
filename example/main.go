@@ -5,13 +5,13 @@ import (
 	"path/filepath"
 
 	"github.com/getlantern/golog"
-	"github.com/zxhcc20000/pac"
+	"github.com/zyxlox/pac"
 )
 
 var log = golog.LoggerFor("example")
 
 func main() {
-	helperFullPath := "pac-cmd"
+	helperFullPath := "pac-set"
 	iconFullPath, _ := filepath.Abs("./icon.png")
 	log.Debugf("Using icon at %v", iconFullPath)
 	err := pac.EnsureHelperToolPresent(helperFullPath, "Input your password and save the world!", iconFullPath)
